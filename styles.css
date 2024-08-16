@@ -22,7 +22,6 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    border-radius: 30px;
     padding: 20px;
     padding-bottom: 5px;
   }
@@ -40,18 +39,21 @@
   
   .btn {
     cursor: pointer;
-    width: 100px;
+    width: 110px;
+    height: 40px;
     margin: 10px;
     color: #0a0a23;
     font-size: 18px;
     background-color: var(--golden-yellow);
     background-image: linear-gradient(#fecc4c, #ffac33);
-    border-color: var(--golden-yellow);
-    border-width: 3px;
+    border: 0;
+    border-radius: 10px;
   }
   
   .btn:hover {
     background-image: linear-gradient(#ffcc4c, #f89808);
+    scale: 1.1;
+    transition: 80ms;
   }
   
   .btn-container {
@@ -82,6 +84,7 @@
     .start-screen {
       width: 60%;
       max-width: 700px;
+      border-radius: 30px;
     }
   
     .checkpoint-screen {
